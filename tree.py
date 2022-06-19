@@ -34,7 +34,7 @@ class BinaryTree:
             rightSum = self.treeSum(root.right)
             return root.data + leftSum + rightSum  # quando o node a esquerda e direita foram verificados ele retorna o valor deles com o valor do node
 
-    def armazenar_elementos2(self, lista, node=None):
+    def armazenar_elementos2(self, lista, node=None): #METODO QUE USEI NA PROVA
         if node == None:
             return
         if node.left != None:
@@ -44,7 +44,7 @@ class BinaryTree:
         lista.append(node.data)
         return lista
 
-    def armazenar_elementos(self, lista , node=None):
+    def armazenar_elementos(self, lista , node=None): #METODO MELHORADO
         if node == None:
             return None
         self.armazenar_elementos(lista, node.left)
