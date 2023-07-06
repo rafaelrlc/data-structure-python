@@ -1,4 +1,4 @@
-class Queue:
+class Queue2:
     """PRIMEIRO INSERIDO, PRIMEIRO REMOVIDO"""
     def __init__(self):
         self.last = None  # elemento que ta no topo
@@ -46,7 +46,7 @@ class Queue:
             raise IndexError("Stack is empty")
 
 
-# fila = Queue()
+# fila = Queue2()
 # fila.push(3)
 # fila.push(6)
 # fila.push(87)
